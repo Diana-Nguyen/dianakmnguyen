@@ -1,0 +1,34 @@
+.sticker {
+  position: absolute;
+  cursor: grab;
+  touch-action: none;
+  filter: drop-shadow(var(--sticker-shadow));
+  will-change: transform;
+}
+
+.sticker:active {
+  cursor: grabbing;
+}
+
+.sticker--tidy {
+  cursor: default;
+}
+
+.sticker--anchored {
+  position: relative;
+  left: auto;
+  top: auto;
+}
+
+.sticker--link {
+  cursor: pointer;
+}
+
+.sticker__img {
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}

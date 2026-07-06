@@ -1,0 +1,30 @@
+{
+  "name": "Diana Nguyen",
+  "title": "Design Engineer",
+  "location": "Greater Seattle Area",
+  "tagline": "welcome to my brain",
+  "heroSubtitle": "A digitized pile of projects and interests, organized just enough to be a website.",
+  "heroStickerHint": "Stickers are draggable!",
+  "about": {
+    "bio": [
+      "Based in Washington, I'm a lifelong nerd, endlessly interested about how things work and how they feel. I've spent the last 5+ years building and integrating product UI as a frontend engineer at Warner Bros. Discovery, and I'm currently finishing a Master's in HCI at DePaul because I want to understand people better and build better experiences for them.",
+      "Outside of work, I'm a chronic collector of hobbies and half-finished projects, always in the middle of learning or making something.", 
+      "Curious about most things, enthusiastic about too many!"
+    ],
+    "credentials": [
+      "Frontend Engineer · Warner Bros. Discovery · 5+ years",
+      "M.S. Human-Computer Interaction · DePaul University",
+      "B.S. Computer Science · Video Game Design & Development · University of Louisiana",
+      "Certified Accessible Player Experience Practitioner · Game Accessibility"
+    ],
+    "previewLabel": "Preview",
+    "viewExperience": "View experience"
+  },
+  "mainQuestIntro": "(career mode — frontend, projects, research)",
+  "sideQuestsIntro": "(non-work edition)",
+  "links": {
+    "email": "dianakmnguyen@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/nguyen-diana",
+    "github": "https://github.com/Diana-Nguyen"
+  }
+}

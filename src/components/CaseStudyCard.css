@@ -1,0 +1,82 @@
+.case-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.case-card--home {
+  max-width: none;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.case-card__preview {
+  margin: 0 0 0.25rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--sage) 45%, transparent);
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.case-card__preview img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.case-card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+
+.case-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+}
+
+.case-card__tags li {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border: 1px solid var(--sage);
+  background: color-mix(in srgb, var(--cream) 40%, var(--beige));
+}
+
+.case-card__summary {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.case-card__a11y {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink);
+  border-left: 3px solid var(--gold);
+  padding-left: 0.75rem;
+}
+
+.case-card__a11y-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.case-card__cta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: auto;
+}

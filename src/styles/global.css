@@ -1,0 +1,192 @@
+@import './tokens.css';
+@import './grid.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--cream);
+  overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: var(--cream);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+.home-section-fallback {
+  min-height: var(--section-min-h);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--forest);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  background: var(--forest);
+  color: var(--cream-on-forest);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  left: 1rem;
+  top: 1rem;
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.display-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin: 0;
+  color: inherit;
+}
+
+.display-heading em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.section--cream {
+  --section-bg: var(--cream);
+  color: var(--ink);
+}
+
+.section--about.grid-bg {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(180deg, var(--cream) 0%, color-mix(in srgb, var(--sage) 18%, var(--cream)) 100%);
+  background-size: var(--grid-tile) var(--grid-tile), var(--grid-tile) var(--grid-tile), 100% 100%;
+}
+
+.section--about {
+  --section-bg: var(--cream);
+  color: var(--ink);
+}
+
+.section--forest {
+  --section-bg: var(--forest);
+  color: var(--cream-on-forest);
+}
+
+.section--deep {
+  --section-bg: var(--forest-deep);
+  color: var(--cream-on-forest);
+}
+
+.section--forest a,
+.section--deep a {
+  color: var(--gold-light);
+}
+
+.section--forest a:hover,
+.section--deep a:hover {
+  color: var(--cream-on-forest);
+}
+
+.kraft-frame {
+  border: 2px solid var(--sage);
+  background: var(--beige);
+  box-shadow: var(--sticker-shadow);
+  padding: 1rem;
+  color: var(--ink);
+}
+
+.section--forest .kraft-frame a,
+.section--deep .kraft-frame a {
+  color: var(--forest);
+}
+
+.section--forest .kraft-frame a:hover,
+.section--deep .kraft-frame a:hover {
+  color: var(--gold);
+}
+
+.section--forest .kraft-frame .mono-label,
+.section--deep .kraft-frame .mono-label {
+  color: var(--forest);
+}
+
+.tape-corner::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 12px;
+  width: 48px;
+  height: 18px;
+  background: color-mix(in srgb, var(--gold-light) 70%, var(--beige));
+  transform: rotate(4deg);
+  opacity: 0.9;
+  pointer-events: none;
+}

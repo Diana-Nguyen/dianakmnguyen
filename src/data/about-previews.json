@@ -1,0 +1,58 @@
+[
+  {
+    "id": "wbd",
+    "title": "HBO Max",
+    "subtitle": "Design system · A11y · Commerce",
+    "accent": "forest",
+    "src": "/photos/about-preview-hbo-max.jpg",
+    "alt": "HBO Max payment method UI preview"
+  },
+  {
+    "id": "dplus",
+    "title": "Discovery+",
+    "subtitle": "A11y · Auth · Commerce",
+    "accent": "gold",
+    "src": "/photos/about-preview-discovery-plus.jpg",
+    "alt": "Discovery+ code redemption UI preview"
+  },
+  {
+    "id": "jester",
+    "title": "Jester Cat",
+    "subtitle": "Design system",
+    "accent": "sage",
+    "src": "/photos/about-preview-jester.jpg",
+    "alt": "Jester Cat design system page preview"
+  },
+  {
+    "id": "salem",
+    "title": "Salem's Cafe",
+    "subtitle": "UX & UI Design · 3D Modeling · Art",
+    "accent": "forest",
+    "src": "/photos/about-preview-salem.jpg",
+    "alt": "Salem's Cafe game preview"
+  },
+  {
+    "id": "chroma",
+    "title": "Chroma",
+    "subtitle": "UX & UI Design · 3D Modeling · Art",
+    "accent": "gold",
+    "src": "/photos/about-preview-chroma.jpg",
+    "alt": "Chroma game preview"
+  },
+  {
+    "id": "starsay",
+    "title": "StarSay",
+    "subtitle": "Full stack development & design",
+    "accent": "sage",
+    "src": "/photos/about-preview-starsay.jpg",
+    "alt": "StarSay full stack development preview"
+  },
+  {
+    "id": "forinadex",
+    "title": "ForinaDex",
+    "subtitle": "Full stack development & design",
+    "accent": "forest",
+    "src": "/photos/about-preview-forinadex.jpg",
+    "alt": "ForinaDex full stack development preview"
+  }
+]

@@ -1,0 +1,230 @@
+.research-study {
+  scroll-margin-top: 5rem;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.research-study + .research-study {
+  margin-top: 2rem;
+}
+
+.research-study__intro {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.research-study__preview {
+  margin: 0 0 1rem;
+  overflow: hidden;
+  border-bottom: 2px solid color-mix(in srgb, var(--sage) 45%, transparent);
+  background: var(--cream);
+}
+
+.research-study__preview img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.research-study__header {
+  margin-bottom: 0.5rem;
+}
+
+.research-study__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.research-study__methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+}
+
+.research-study__methods li {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border: 1px solid var(--sage);
+  background: color-mix(in srgb, var(--cream) 40%, var(--beige));
+}
+
+.research-study__summary {
+  margin: 0.85rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.research-study__meta {
+  margin: 0.45rem 0 0;
+}
+
+.research-study__process h2 {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+}
+
+.research-study__process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.research-study__process-steps li {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: color-mix(in srgb, var(--ink) 88%, transparent);
+}
+
+.research-study__process-steps li:not(:last-child)::after {
+  content: '→';
+  margin: 0 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--ink) 45%, transparent);
+}
+
+.research-study__process-tools {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--ink) 65%, transparent);
+}
+
+.research-study__figure {
+  margin: 1rem 0 0;
+  min-width: 0;
+}
+
+.research-study__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid color-mix(in srgb, var(--sage) 45%, transparent);
+  border-radius: 4px;
+  background: var(--cream);
+}
+
+.research-study__figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: color-mix(in srgb, var(--ink) 75%, transparent);
+}
+
+.research-study__embed {
+  margin: 1rem 0 0;
+  min-width: 0;
+  overflow: hidden;
+  border: 2px solid color-mix(in srgb, var(--sage) 45%, transparent);
+  border-radius: 4px;
+  background: var(--cream);
+}
+
+.research-study__embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  min-height: 560px;
+}
+
+.research-study__embed-link {
+  margin: 0;
+  padding: 0.65rem 0.85rem;
+  border-top: 1px dashed color-mix(in srgb, var(--sage) 45%, transparent);
+}
+
+.research-study__embed-link a {
+  text-decoration: none;
+}
+
+.research-study__pair {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  min-width: 0;
+}
+
+.research-study__embed-item {
+  min-width: 0;
+  overflow: hidden;
+  border: 2px solid color-mix(in srgb, var(--sage) 45%, transparent);
+  border-radius: 4px;
+  background: var(--cream);
+}
+
+.research-study__embed-item iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  min-height: 480px;
+}
+
+.research-study__embed-label,
+.research-study__figure-label {
+  margin: 0;
+  padding: 0.55rem 0.85rem 0;
+}
+
+.research-study__pair .research-study__figure {
+  margin: 0;
+}
+
+@media (min-width: 840px) {
+  .research-study__pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .research-study__embed-item iframe {
+    min-height: 560px;
+  }
+}
+
+.research-study .content-page__section h2 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 840px) {
+  .research-study__intro {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+
+  .research-study__preview {
+    margin: 0;
+    border-bottom: 0;
+    border-right: 2px solid color-mix(in srgb, var(--sage) 45%, transparent);
+    border-radius: 4px;
+  }
+
+  .research-study__preview img {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .research-study__header {
+    margin-bottom: 0;
+  }
+}

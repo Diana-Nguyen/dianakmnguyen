@@ -1,0 +1,117 @@
+[
+  {
+    "slug": "playwright-lifecycle",
+    "title": "Playwright scenario testing",
+    "role": "Software Engineer",
+    "product": "HBO Max",
+    "tags": [
+      "Testing",
+      "Playwright",
+      "CI",
+      "Quality Assurance"
+    ],
+    "oneLiner": "Co-led sandbox merge testing and owned Playwright coverage for subscription lifecycle flows.",
+    "gap": [
+      "This started as a standardization effort with GQA, aimed at making testing consistent across HBO Max's different platforms so teams weren't reinventing the same testing steps in different ways. Around the same time, our play and auth sandboxes, streaming and player on one side, auth and commerce on the other, were being merged into one. I co-led a tiger team through this, coordinating with people across time zones to figure out what testing should look like once everything lived together.",
+      "From there, I ended up owning most of the actual test work for our subscription flows: cancel, downgrade, change plan, resume, and profile switching. Coverage was inconsistent, selectors were brittle, and every auth refactor tended to break something downstream."
+    ],
+    "whatIDid": [
+      "I migrated tests into the merged sandbox and rebuilt them around a page object model, so a UI change meant updating one file instead of hunting selectors across a dozen tests. I set up route mocks and fixture-based network patterns so tests weren't dependent on slow or flaky third-party calls, and upgraded our Playwright version alongside reworking parallel execution to make CI faster without making it less trustworthy.",
+      "More recently, I dug into test setup and cleanup. Some tests were leaving accounts in a bad state when they failed partway through. For example, a test creating a profile would hit an error before reaching the cleanup step, so the profile never got deleted. Since accounts can only hold a handful of profiles, that leftover profile would cause the next test to fail too, for a completely unrelated reason. I fixed the setup and teardown logic so tests failed cleanly instead of taking other tests down with them.",
+      "When other teams got blocked on stale HAR files for their mocks, I started picking those refreshes up. I treated it as a developer experience problem: making sure the docs actually made sense and adding scripts so people who weren't in this code daily could refresh and test things themselves, instead of needing to track me down."
+    ],
+    "whatHappened": [
+      "Coverage across the merged sandbox went from patchy to solid. Failures started meaning something again instead of people just rerunning CI and hoping. Between the tiger team work and the ongoing ownership since, I became the person people came to with Playwright questions."
+    ]
+  },
+  {
+    "slug": "payments-regional",
+    "title": "Regional payment methods",
+    "role": "Software Engineer",
+    "product": "HBO Max",
+    "tags": [
+      "Payments",
+      "Checkout",
+      "Accessibility"
+    ],
+    "oneLiner": "Integrated regional payment methods across global markets and led error-handling work during a vendor migration.",
+    "gap": [
+      "When HBO Max launches in a new country, the product only matters if people can actually pay for it in a way that's familiar to them. Card payments dominate in some markets, but a lot of regions rely on bank redirects, local wallets, or region-specific methods instead. Supporting only cards would mean leaving real users, and real revenue, out of every new market we entered."
+    ],
+    "whatIDid": [
+      "I contributed to several regional payment integrations alongside the payments and monetization teams: iDEAL and 3D Secure, Carte Bancaire, and NuPay. Each one had its own shape, different required fields, different confirmation flows, different validation rules, so getting them right meant working closely with backend and monetization teams who owned the underlying payment logic.",
+      "My recent work was replacing our payment vendor. My focus was error handling, specifically making sure users get clear, actionable feedback when something goes wrong so they can actually fix their own mistake instead of being stuck. That's an accessibility problem as much as a technical one: a vague or generic error doesn't help someone who mistyped a card number or missed a required field. In the process, I found gaps in the vendor's error architecture where their error keys weren't specific enough to support that kind of clear, fixable feedback. I raised it with the vendor, asking them to add more granular error keys so we could surface the right message instead of working around a limitation on their end."
+    ],
+    "whatHappened": [
+      "Payment methods aren't a niche part of the app, they're the thing standing between someone deciding to subscribe and actually being able to. The integrations I've worked on span AMER, LATAM, EMEA, and APAC, which means almost every subscriber touches these flows at some point, whether it's their first checkout or a plan change down the line.",
+      "The vendor migration is still underway, and I continue to maintain the regional integrations already in place."
+    ]
+  },
+  {
+    "slug": "a11y-auth",
+    "title": "Accessibility on auth, profile, and redeem flows",
+    "role": "Software Engineer",
+    "product": "Discovery+ → HBO Max",
+    "tags": [
+      "WCAG",
+      "ARIA",
+      "Keyboard",
+      "Screen readers"
+    ],
+    "oneLiner": "Started on a Discovery+ accessibility tiger team and carried that discipline into HBO Max auth, profile, and redeem flows.",
+    "gap": [
+      "I started at Discovery+ on a tiger team focused on fixing accessibility issues, so this wasn't work that landed on me randomly, it's where I began. Assistive technology users were hitting real walls across auth, profile, and redeem flows: missing labels, focus landing in the wrong place after a modal closed, promo code inputs with no real semantics, profile avatars with no meaningful text alternative.",
+      "One of the earlier issues I worked on, fixing billing forms that broke under text magnification, ended up being the moment this became more than just a task list for me. It pushed me to actually dig into WCAG guidelines instead of just fixing what was in front of me, and that curiosity about how people actually experience interfaces is part of what pushed me to pursue accessibility and HCI further."
+    ],
+    "whatIDid": [
+      "On Discovery+, I added screen-reader-only text on the language picker, required-field semantics on auth inputs, and alt text on profile avatars. I fixed focus management so it returned to a sensible place after an overlay closed, added landmark roles and promo code semantics on the redeem flow, and fixed link contrast and autocomplete categories on sensitive inputs like login fields. I tested primarily with VoiceOver, and occasionally NVDA through BrowserStack, working from real usage patterns rather than a checklist.",
+      "When Discovery+ moved into the HBO Max monorepo, this stopped being a dedicated initiative and became a normal part of how I worked. Instead of a tiger team pushing a specific effort, it turned into fixing accessibility bugs as they came up: live region and header announcements across auth routes in phased releases, accessible error presentation on payment screens, semantic headings and tooltip behavior on nested interactive elements in shared components."
+    ],
+    "whatHappened": [
+      "Accessibility went from being a dedicated project to just being part of how I build things, which is honestly the outcome you want. I still test with VoiceOver and NVDA rather than relying on automated checks alone, and the WCAG research habit that started with the billing zoom fix still shapes how I approach new flows today."
+    ]
+  },
+  {
+    "slug": "billing-zoom",
+    "title": "Billing forms that work at any zoom level",
+    "role": "Software Engineer",
+    "product": "Discovery+",
+    "tags": [
+      "Checkout",
+      "CSS",
+      "Cross-browser",
+      "Accessibility"
+    ],
+    "oneLiner": "Fixed billing layouts that broke under text magnification and mobile breakpoints, and established a pattern reused on HBO Max payment screens.",
+    "gap": [
+      "As part of the accessibility tiger team, I was looking at high-impact pages to make sure they actually met accessibility guidelines, not just functional QA. Billing was one of those pages: it technically worked, standard QA had passed it, but users who enlarged text or browsed on mobile ran into forms that fell apart. Overlapping fields, clipped labels, broken layouts. It wasn't that QA had missed something obvious, accessibility just wasn't yet a standard part of what testing looked for at that point. Nobody had really been testing for zoom or magnification as a real usage pattern."
+    ],
+    "whatIDid": [
+      "I reproduced the issues myself across browsers and zoom levels to see what users were actually running into. From there, it was a lot of iteration on form layout and spacing, several rounds of PRs over a few weeks, since fixing one breakpoint or zoom level sometimes shifted the problem somewhere else. I coordinated with checkout QA before shipping each round, since checkout bugs are the kind that block someone from paying, not just a visual inconvenience. Along the way I also fixed related issues: payment method highlighting, 3D Secure challenge styling, and cancellation survey button layout."
+    ],
+    "whatHappened": [
+      "This became a pattern I reused later on HBO Max payment screens. It's also the project that got me paying close attention to accessibility guidelines in the first place. Seeing how something as basic as text zoom could break a core, revenue-critical flow made it clear these weren't edge cases, they were real ways people use the product, and that testing needed to account for them going forward."
+    ]
+  },
+  {
+    "slug": "modal-migration",
+    "title": "Migrating modals to a shared design system",
+    "role": "Software Engineer",
+    "product": "Discovery+",
+    "tags": [
+      "Design system",
+      "Refactor",
+      "Account settings"
+    ],
+    "oneLiner": "Migrated a dozen account modals onto shared, token-based web components without breaking translations or analytics.",
+    "gap": [
+      "Account settings, personal info, password, birthday, subscription, device management, were each built as their own one-off modal. That meant inconsistent UX across the account area, and every accessibility fix had to be repeated across a dozen slightly different components instead of fixed once. This came out of a separate initiative to build a proper reusable component library, one designed to be upgradeable across different brands using shared design tokens rather than hardcoded styles. That mattered beyond just Discovery+: a system built with tokens can adapt to a different brand's colors, spacing, and type without rebuilding the components themselves."
+    ],
+    "whatIDid": [
+      "I migrated the modals over incrementally rather than all at once: personal info, then password validation, then birthday, subscription, and device management, each one swapped onto shared web components separately. Keeping the scope small on each PR wasn't just about reducing risk, it was about respecting the people reviewing the code. A smaller, focused PR is something a reviewer can actually reason about carefully, where a dozen modals changed at once just invites a rubber stamp. I upgraded the shared button and drawer components those modals depended on, and fixed regressions along the way, like a toast notification breaking on a customized modal and manage-devices behavior shifting unexpectedly. I also kept strings and analytics contracts stable throughout, so translations and tracking didn't break just because the underlying component changed."
+    ],
+    "whatHappened": [
+      "Account settings moved from a dozen custom modals to one shared, token-based component library, which meant future fixes, accessibility or otherwise, only needed to happen in one place instead of a dozen. This work also became the direct precursor to what I built later on HBO Max."
+    ]
+  }
+]

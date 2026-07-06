@@ -1,0 +1,10 @@
+declare module '*.JPG' {
+  const src: string
+  export default src
+}
+
+declare module '*.mjs?url' {
+  const src: string
+  export default src
+}
+

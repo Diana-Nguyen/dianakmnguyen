@@ -1,0 +1,21 @@
+.grid-bg {
+  position: relative;
+  --grid-tile: 28px;
+  --grid-color: var(--sage);
+  --grid-opacity: 3%;
+  --grid-line: color-mix(in srgb, var(--grid-color) var(--grid-opacity), transparent);
+  background-color: var(--section-bg, var(--cream));
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--grid-tile) var(--grid-tile);
+}
+
+.grid-bg--dark {
+  --grid-opacity: 2.5%;
+}
+
+.grid-bg--forest {
+  --grid-color: var(--gold-light);
+  --grid-opacity: 2%;
+}

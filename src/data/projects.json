@@ -1,0 +1,31 @@
+[
+  {
+    "id": "wbd",
+    "slug": "warner-bros-discovery",
+    "title": "Warner Bros. Discovery",
+    "role": "Software Engineer",
+    "period": "July 2021 – Present",
+    "description": "Subscription streaming web in React and TypeScript — Discovery+ and HBO Max checkout, billing, auth, design systems, accessibility, and Playwright integration testing.",
+    "tags": ["React", "TypeScript", "Design systems", "A11y"],
+    "type": "work"
+  },
+  {
+    "id": "game-dev",
+    "slug": "game-development",
+    "title": "Game development",
+    "role": "Designer & developer",
+    "description": "Personal and academic projects blending game design training with frontend craft — prototypes and playful interaction.",
+    "tags": ["Unity", "UI", "Game design"],
+    "type": "project"
+  },
+  {
+    "id": "ux-masters",
+    "slug": "hci-masters-research",
+    "title": "HCI master's research",
+    "role": "UX Researcher",
+    "description": "Case studies in user research, prototyping, and web accessibility — see detailed write-ups below.",
+    "tags": ["UX research", "Prototyping", "WCAG"],
+    "typeLabel": "academic",
+    "type": "project"
+  }
+]

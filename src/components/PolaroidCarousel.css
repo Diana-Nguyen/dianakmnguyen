@@ -1,0 +1,202 @@
+.polaroid-carousel {
+  --polaroid-frame-height: 15.75rem;
+  --polaroid-media-height: 11.25rem;
+  --polaroid-caption-height: 2.85rem;
+  --polaroid-slot-width-portrait: calc(var(--polaroid-media-height) * 3 / 4 + 1rem);
+  --polaroid-slot-width-landscape: calc(var(--polaroid-media-height) * 4 / 3 + 1rem);
+  --polaroid-gap: clamp(0.85rem, 2.5vw, 1.35rem);
+  --polaroid-frame-motion: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+}
+
+.polaroid-carousel__viewport {
+  overflow: hidden;
+  width: 100%;
+  height: var(--polaroid-frame-height);
+  min-height: var(--polaroid-frame-height);
+  max-height: var(--polaroid-frame-height);
+  opacity: 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgb(0 0 0 / 35%) 8%,
+    black 18%,
+    black 82%,
+    rgb(0 0 0 / 35%) 92%,
+    transparent 100%
+  );
+  transition: opacity 0.15s ease;
+}
+
+.polaroid-carousel__viewport--ready {
+  opacity: 1;
+}
+
+.polaroid-carousel__track {
+  display: flex;
+  align-items: center;
+  gap: var(--polaroid-gap);
+  height: 100%;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--polaroid-gap) * -0.5);
+  margin-right: calc(var(--polaroid-gap) * -0.5);
+}
+
+.polaroid-carousel__slide {
+  flex: 0 0 auto;
+  min-width: 0;
+  padding: 0 calc(var(--polaroid-gap) * 0.5);
+}
+
+.polaroid-carousel__frame {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  height: var(--polaroid-frame-height);
+  min-height: var(--polaroid-frame-height);
+  max-height: var(--polaroid-frame-height);
+  padding: 0.5rem 0.5rem 0.55rem;
+  border-color: color-mix(in srgb, var(--gold-light) 45%, transparent);
+  background: var(--cream);
+  box-shadow:
+    0 24px 46px rgb(42 37 32 / 22%),
+    0 10px 18px rgb(42 37 32 / 14%),
+    0 3px 7px rgb(42 37 32 / 12%);
+  flex-shrink: 0;
+  transform: scale(0.92);
+  opacity: 0.45;
+  transition:
+    transform var(--polaroid-frame-motion),
+    opacity var(--polaroid-frame-motion),
+    filter var(--polaroid-frame-motion),
+    box-shadow var(--polaroid-frame-motion);
+}
+
+.polaroid-carousel__frame--portrait {
+  flex: 0 0 var(--polaroid-slot-width-portrait);
+  width: var(--polaroid-slot-width-portrait);
+}
+
+.polaroid-carousel__frame--landscape {
+  flex: 0 0 var(--polaroid-slot-width-landscape);
+  width: var(--polaroid-slot-width-landscape);
+}
+
+.polaroid-carousel__frame--active {
+  transform: scale(1);
+  opacity: 1;
+  filter: none;
+  z-index: 1;
+}
+
+.polaroid-carousel__frame--peek {
+  transform: scale(0.86);
+  opacity: 0.5;
+  filter: saturate(0.75) brightness(0.92);
+  z-index: 0;
+  box-shadow:
+    0 12px 24px rgb(42 37 32 / 12%),
+    0 4px 8px rgb(42 37 32 / 8%);
+}
+
+.polaroid-carousel__frame--off {
+  transform: scale(0.9);
+  opacity: 0.35;
+}
+
+.polaroid-carousel__media {
+  flex: 0 0 var(--polaroid-media-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--polaroid-media-height);
+  width: 100%;
+  overflow: hidden;
+}
+
+.polaroid-carousel__frame--portrait .polaroid-carousel__media {
+  width: calc(var(--polaroid-media-height) * 3 / 4);
+  aspect-ratio: 3 / 4;
+}
+
+.polaroid-carousel__frame--landscape .polaroid-carousel__media {
+  width: calc(var(--polaroid-media-height) * 4 / 3);
+  aspect-ratio: 4 / 3;
+}
+
+.polaroid-carousel__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.polaroid-carousel__caption {
+  flex: 0 0 var(--polaroid-caption-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: var(--polaroid-caption-height);
+  min-height: var(--polaroid-caption-height);
+  max-height: var(--polaroid-caption-height);
+  padding: 0 0.15rem;
+  font-size: 0.6rem;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--cream-on-forest);
+  overflow: hidden;
+}
+
+.polaroid-carousel__frame--peek .polaroid-carousel__caption,
+.polaroid-carousel__frame--off .polaroid-carousel__caption {
+  visibility: hidden;
+}
+
+.polaroid-carousel__controls {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(1.75rem, 3.5vh, 2.5rem);
+  padding-top: 0.5rem;
+}
+
+.polaroid-carousel__controls .carousel-controls--compact {
+  gap: 1rem;
+  padding: 0.35rem 0.75rem;
+}
+
+.polaroid-carousel__controls .carousel-controls__nav {
+  padding: 0.5rem 0.85rem;
+}
+
+@media (min-width: 640px) {
+  .polaroid-carousel {
+    --polaroid-frame-height: 17.5rem;
+    --polaroid-media-height: 12.75rem;
+    --polaroid-caption-height: 3rem;
+    --polaroid-slot-width-portrait: calc(var(--polaroid-media-height) * 3 / 4 + 1.1rem);
+    --polaroid-slot-width-landscape: calc(var(--polaroid-media-height) * 4 / 3 + 1.1rem);
+  }
+
+  .polaroid-carousel__frame {
+    padding: 0.55rem 0.55rem 0.6rem;
+  }
+
+  .polaroid-carousel__caption {
+    font-size: 0.64rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .polaroid-carousel__frame {
+    transition: none;
+  }
+}

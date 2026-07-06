@@ -1,0 +1,16 @@
+.sticker-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.sticker-field .sticker {
+  pointer-events: auto;
+}
+
+.sticker-field--hidden {
+  display: none;
+}

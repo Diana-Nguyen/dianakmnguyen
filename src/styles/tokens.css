@@ -1,0 +1,29 @@
+:root {
+  --cream: #f7f2e8;
+  --beige: #e8dfc8;
+  --gold: #c9a227;
+  --gold-light: #e8c96a;
+  --forest: #2f5a40;
+  --forest-deep: #1f3d2b;
+  --sage: #7a9b76;
+  --ink: #3d3229;
+  --cream-on-forest: #f7f2e8;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --focus-ring: 3px solid var(--gold);
+  --focus-offset: 3px;
+  --section-min-h: min(100svh, 900px);
+  --max-content: 72rem;
+  --section-gutter: clamp(1.25rem, 5vw, 3rem);
+  --sticker-shadow: 2px 4px 12px rgb(42 37 32 / 18%);
+  --sticker-size: 111px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --sticker-size: 88px;
+  }
+}

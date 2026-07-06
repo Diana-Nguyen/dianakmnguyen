@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="24px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask fill="white" id="Clip98">
+      <path d="M 29 1228.5  C 22.6175 1228.5  17.5 1223.3825  17.5 1217  L 17.5 1217  C 17.5 1210.6175  22.6175 1205.5  29 1205.5  L 31 1205.5  C 37.3825 1205.5  42.5 1210.6175  42.5 1217  L 42.5 1217  C 42.5 1223.3825  37.3825 1228.5  31 1228.5  L 29 1228.5  " fill-rule="evenodd" />
+    </mask>
+  </defs>
+  <g transform="matrix(1 0 0 1 -17 -1205 )">
+    <path d="M 17 1205  L 43 1205  L 43 1229  L 17 1229  L 17 1205  " fill-rule="nonzero" fill="rgba(204, 204, 204, 1)" stroke="none" class="fill" mask="url(#Clip98)" />
+    <path d="M 19 1207  L 41 1207  L 41 1227  L 19 1227  L 19 1207  " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" class="fill" mask="url(#Clip98)" />
+    <path d="M 32.32 1212.1999999999998  C 31.312 1212.1999999999998  30.52 1211.408  30.52 1210.3999999999999  C 30.52 1209.3919999999998  31.312 1208.6  32.32 1208.6  C 33.327999999999996 1208.6  34.12 1209.3919999999998  34.12 1210.3999999999999  C 34.12 1211.408  33.327999999999996 1212.1999999999998  32.32 1212.1999999999998  " fill-rule="nonzero" fill="rgba(204, 204, 204, 1)" stroke="none" class="fill" mask="url(#Clip98)" />
+    <path d="M 20 1227  L 20 1216.55  L 25.25 1211.8  L 32.6 1216.4769230769232  L 36.8 1214.65  L 41 1216.4769230769232  L 41 1227  L 20 1227  " fill-rule="nonzero" fill="rgba(22, 155, 213, 1)" stroke="none" class="fill" mask="url(#Clip98)" />
+    <path d="M 29 1228  C 22.895 1228  18 1223.105  18 1217  L 18 1217  C 18 1210.895  22.895 1206  29 1206  L 31 1206  C 37.105000000000004 1206  42 1210.895  42 1217  L 42 1217  C 42 1223.105  37.105000000000004 1228  31 1228  L 29 1228  Z " stroke-width="2" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" class="stroke" mask="url(#Clip98)" />
+  </g>
+</svg>

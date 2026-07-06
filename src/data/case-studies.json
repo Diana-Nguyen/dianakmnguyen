@@ -1,0 +1,871 @@
+[
+  {
+    "slug": "roam",
+    "title": "Roam",
+    "role": "UX Researcher, Designer, & Prototyper, Team of 4",
+    "timeline": "Ideation → Personas → Low-fi sketches → Narrative prototype → Mid-fi prototype → Usability testing → Hi-fi prototype",
+    "tools": ["FigJam", "Axure RP", "Remote & in-person usability testing"],
+    "summary": "Cross-device app design consolidating rideshare, transit, and taxi options — from sketching through tested mid-fidelity flows to high-fidelity mobile and smartwatch prototypes.",
+    "methods": [
+      "Personas",
+      "Narrative prototyping",
+      "Cross-device design",
+      "Usability testing"
+    ],
+    "previewImage": "/photos/roam-preview.jpg",
+    "previewAlt": "Screenshots of the Roam mobile and smartwatch prototype",
+    "highlights": [
+      "Contributed mobile and smartwatch sketches, helped shape the test protocol, and facilitated one of four usability sessions",
+      "Took the project from paper sketches through a tested mid-fidelity prototype to interactive high-fidelity mobile and smartwatch builds",
+      "All four participants completed every task, but sort versus filter labels, save-route sequencing, and cut-off screen elements came up across sessions",
+      "Testing feedback shaped the hi-fi prototype, including Schedule Later, a draggable bottom panel, and save confirmation",
+      "The final deliverable was interactive Axure prototypes for both devices, validated through mid-fidelity testing only"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "The problem",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Comparing travel options across apps usually means checking several services just to see what is fastest or cheapest. Roam's premise was to pull rideshare, transit, and taxi into one place so people could compare fares and times without switching apps."
+          }
+        ]
+      },
+      {
+        "id": "direction",
+        "title": "Sketches and alignment",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We each sketched mobile and smartwatch flows, merged them in FigJam, and aligned on visual direction with shared mood boards before building in Axure. I contributed sketches for both device flows and eventually created the overall branding and logo."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/roam-lowfi-sketches.jpg",
+            "alt": "Low-fidelity paper sketches of Roam mobile and smartwatch flows",
+            "caption": "Individual sketches merged in FigJam before we moved into higher fidelity."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/roam-moodboard.jpg",
+            "alt": "Roam mood board with color, imagery, and visual direction references",
+            "caption": "Shared mood board — visual direction before screen design."
+          }
+        ]
+      },
+      {
+        "id": "narrative",
+        "title": "Narrative prototype",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Before mid-fidelity screens, we walked through a narrative scenario for Erin, one of our commuter personas, from searching a route and comparing fares to sorting by time and booking. That alignment step helped us agree on screen order while changes were still inexpensive to make."
+          },
+          {
+            "type": "pdf",
+            "src": "/prototypes/roam-narrative.pdf",
+            "title": "Roam narrative prototype slidedeck",
+            "caption": "Erin's end-to-end scenario — flow alignment before mid-fidelity build.",
+            "linkLabel": "Open narrative prototype PDF →",
+            "defaultZoom": 1
+          }
+        ]
+      },
+      {
+        "id": "testing",
+        "title": "Usability testing",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We tested mid-fidelity mobile and smartwatch prototypes in Axure with four participants (in person, Zoom, and Discord). I facilitated one session and helped shape the protocol. Each participant completed three tasks: search and filter a route, save a route for later, and complete a smartwatch handoff after booking."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Route search and filter averaged about 20.5 seconds with a 4.5 out of 5 ease rating",
+              "Saving a route averaged about 47 seconds with more mixed ease ratings",
+              "Smartwatch handoff averaged about 42.5 seconds, and every participant completed all three tasks"
+            ]
+          },
+          {
+            "type": "figure",
+            "src": "/photos/roam-midfi.jpg",
+            "alt": "Roam mid-fidelity mobile and smartwatch prototype screens",
+            "caption": "Mid-fidelity mobile and smartwatch flows."
+          }
+        ]
+      },
+      {
+        "id": "testing-findings",
+        "title": "What kept showing up",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "Sort versus Filter confused multiple users about what each control did",
+              "Save sequencing was unclear, and one participant asked whether she needed to reload the app between tasks",
+              "Cut-off screen elements hid parts of the bottom route panel",
+              "Terminology around ETA versus time caused confusion during tasks"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "We addressed those issues in the high-fidelity build with Schedule Later, a draggable bottom panel, save confirmation, support for multiple saved routes per category, and a pricing estimates disclaimer."
+          }
+        ]
+      },
+      {
+        "id": "hifi",
+        "title": "High-fidelity prototype",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The high-fidelity build added onboarding screens, provider logos, and refined interaction flows across both devices."
+          },
+          {
+            "type": "embedPair",
+            "height": 720,
+            "items": [
+              {
+                "label": "Mobile",
+                "src": "/prototypes/roam-mobile/start.html",
+                "title": "Roam — mobile prototype",
+                "linkHref": "https://wlzny4.axshare.com/",
+                "linkLabel": "Open mobile prototype in Axure Cloud →"
+              },
+              {
+                "label": "Smartwatch",
+                "src": "/prototypes/roam-watch/start.html",
+                "title": "Roam — smartwatch prototype",
+                "linkHref": "https://puhiis.axshare.com/",
+                "linkLabel": "Open watch prototype in Axure Cloud →"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "outcome",
+        "title": "Outcome",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "After one round of mid-fidelity testing with four participants, all three tasks were completed and post-test scores were mostly above 4 out of 5, with effort required rating lowest. We incorporated that feedback into the high-fidelity build and delivered interactive Axure prototypes for mobile and smartwatch without running a second test round."
+          }
+        ]
+      },
+      {
+        "id": "reflection",
+        "title": "Reflection",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "On this project I worked earlier in the process than I usually do as a frontend engineer, deciding flow and screen order before anything was built in Axure. The narrative prototype step was new to me and took time upfront, but it kept disagreements about structure out of the mid-fidelity build."
+          },
+          {
+            "type": "paragraph",
+            "text": "I had not worked on a smartwatch flow before, and a phone layout does not always shrink cleanly to a wrist screen. Facilitating one session also pushed me to notice hesitation on labels and save steps in real time, which reads differently than a bug report or failed test."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cafe-astrology",
+    "title": "Cafe Astrology",
+    "role": "UX Researcher & Designer, Team of 3",
+    "timeline": "Content inventory → Card sorting → Tree testing → Heuristic evaluation → Sitemap redesign → Wireframes & prototypes",
+    "tools": ["Figma", "UXTweak", "Google Sheets"],
+    "summary": "Information architecture redesign for a high-traffic astrology site — from content audit and card/tree testing through a consolidated navigation structure and interactive wireframes for two key flows.",
+    "methods": [
+      "Content inventory",
+      "Card sorting",
+      "Tree testing",
+      "Heuristic evaluation",
+      "Sitemap design",
+      "Wireframing"
+    ],
+    "previewImage": "/photos/cafe-astrology-preview.jpg",
+    "previewAlt": "Screenshots of Cafe Astrology wireframes",
+    "highlights": [
+      "Built the pilot and updated sitemaps that consolidated three navigation menus into six plain-language top-level categories",
+      "Ran content inventory across all pages reachable from the header, hamburger, and sitemap menus and flagged duplicates and inconsistent naming",
+      "Compiled participant data across card sorts and tree tests with 30 total sessions spanning astrology beginners, casual readers, and enthusiasts",
+      "Card sort category similarity improved from about 70% to 78.5% as labels were simplified; tree test success improved on several tasks after sitemap and wording revisions",
+      "Edited wireframes and set up Figma prototypes for birth chart and birthday playing card flows informed by heuristic evaluation"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "The problem",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Cafe Astrology is a free site with horoscopes, articles, and educational tools, but valuable content is buried behind three separate navigation menus — page header, hamburger menu, and sitemap — that overlap and use inconsistent labels. Visitors struggle to find what they need regardless of how familiar they are with astrology."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/cafe-astrology-site.jpg",
+            "alt": "Cafe Astrology live website showing overlapping header, hamburger, and sitemap navigation",
+            "caption": "The live site — three competing navigation menus with redundant and inconsistent labels."
+          }
+        ]
+      },
+      {
+        "id": "inventory",
+        "title": "Content inventory",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We manually reviewed every page reachable from all three menus, logging each by ID, title, URL, type, and notes. The scale of the site made the IA problem clear: one navigation menu alone had 16 categories, including one branch with 22 sub-categories. Many pages appeared in more than one menu, and some categories linked to a \"More\" page that simply returned to the parent category."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Flagged duplicates and inconsistently named pages across menus",
+              "Grouped content into eight initial topic categories based on common tasks and coverage",
+              "Used the inventory to scope card sort cards and tree test tasks"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "card-sorting",
+        "title": "Card sorting",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We ran three rounds of card sorting — a two-person pilot, then closed sorts with five and seven participants — refining category names toward plain language after each round. The pilot used a hybrid sort; later rounds used closed sorts with defined categories because participants had not created new groupings in the pilot."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Pilot: simplified card names and added an \"Astrology Today\" category; participants struggled with jargon like \"Synastry\"",
+              "Round 1: removed Astrology Today after users could not distinguish it from Horoscopes; average selection similarity reached about 70%",
+              "Round 2: eight categories with further plain-language renames; average similarity improved to about 78.5%"
+            ]
+          },
+          {
+            "type": "figure",
+            "src": "/photos/cafe-astrology-card-sort.jpg",
+            "alt": "UXTweak card sort results showing category agreement across cards in round 2",
+            "caption": "Card sort round 2 — selection similarity across eight categories."
+          }
+        ]
+      },
+      {
+        "id": "card-sort-findings",
+        "title": "What the sorts showed",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "Most participants were beginners or casual readers — navigation labels should prioritize their mental models over enthusiast terminology",
+              "Horoscopes and Forecasts terminology confused users; \"Horoscopes\" alone tested clearer",
+              "Niche items like numerology and good-days calendars fit better under \"For Fun\" to set expectations for beginners",
+              "Low-confidence sorts on niche cards suggested bundling them on single pages rather than top-level navigation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tree-testing",
+        "title": "Tree testing",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We ran tree tests in three rounds — pilot, R1, and R2 — with five tasks each, representing beginner, casual, and enthusiast goals: finding a free birth chart, looking up a birthday playing card, checking birthday compatibility, finding Mercury retrograde dates, and locating zodiac symbols. Thirty total participants completed card sorts or tree tests across all rounds."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Pilot: most tasks saw indirect success; compatibility reached 100%; task wording contributed to failures on Mercury retrograde and symbols",
+              "R1: birth chart, playing card, and compatibility tasks all reached 100% success after sitemap fixes and revised task wording",
+              "R2: Mercury retrograde and symbols tasks improved with clearer definitions; birth chart and compatibility success dropped, partly due to task phrasing and a larger participant pool"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sitemap",
+        "title": "Revised sitemap",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The final sitemap consolidates three menus into one with six top-level categories: The 12 Zodiac Signs, Horoscopes, Astrology 101, Love & Compatibility, Cosmic Forecasts, and For Fun. Key changes from tree test data: Learn Your Astrology moved under Astrology 101 because R1 participants looked there first for birth chart content; For Fun was flattened to direct pages; and free tools were separated from paid reports to reduce confusion."
+          },
+          {
+            "type": "pdf",
+            "src": "/prototypes/cafe-astrology-sitemap.pdf",
+            "title": "Cafe Astrology revised sitemap",
+            "caption": "Final sitemap — six top-level categories replacing three overlapping menus.",
+            "linkLabel": "Open sitemap PDF →",
+            "defaultZoom": 1
+          }
+        ]
+      },
+      {
+        "id": "heuristics",
+        "title": "Heuristic analysis & wireframes",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We evaluated two scenarios on the live site: obtaining a free birth chart (average task score 2.19) and discovering a birthday playing card (2.24). Both suffered from buried navigation, poor visual hierarchy, and missing interactive inputs. The wireframes address those issues with dedicated nav paths, breadcrumb navigation, dropdown inputs replacing static tables, labeled result sections, and clear separation of free tools from paid content."
+          },
+          {
+            "type": "embedPair",
+            "height": 720,
+            "items": [
+              {
+                "label": "Birth chart",
+                "src": "https://embed.figma.com/proto/XJfD0vZWP8GQED2iPDjko9/CafeAstrology_Wireframe_HCI457?node-id=87-715&starting-point-node-id=87%3A715&embed-host=share",
+                "title": "Cafe Astrology — obtain your birth chart flow",
+                "linkHref": "https://www.figma.com/proto/XJfD0vZWP8GQED2iPDjko9/CafeAstrology_Wireframe_HCI457?node-id=87-715&starting-point-node-id=87%3A715",
+                "linkLabel": "Open birth chart prototype in Figma →"
+              },
+              {
+                "label": "Birthday playing card",
+                "src": "https://embed.figma.com/proto/XJfD0vZWP8GQED2iPDjko9/CafeAstrology_Wireframe_HCI457?node-id=22-4250&starting-point-node-id=22%3A4250&embed-host=share",
+                "title": "Cafe Astrology — birthday playing card flow",
+                "linkHref": "https://www.figma.com/proto/XJfD0vZWP8GQED2iPDjko9/CafeAstrology_Wireframe_HCI457?node-id=22-4250&starting-point-node-id=22%3A4250",
+                "linkLabel": "Open playing card prototype in Figma →"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "outcome",
+        "title": "Outcome",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The deliverable was a revised information architecture, heuristic evaluation report, and interactive Figma wireframes for two user flows — not a shipped site redesign or moderated prototype usability test. Card sort similarity and tree test success improved as categories simplified and task wording was refined, though some tasks remained sensitive to astrology terminology and phrasing."
+          }
+        ]
+      },
+      {
+        "id": "reflection",
+        "title": "Reflection",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Building both the pilot and updated sitemaps meant translating card sort and tree test data into structural decisions in real time, not just documenting findings. Moving Learn Your Astrology under Astrology 101 came directly from watching beginners gravitate to educational paths rather than tool-specific sections."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tree test R2 showed how much task wording matters — participants who failed the birth chart task often chose Birthday Playing Card, suggesting \"birth\" in both labels created overlap we had not anticipated. I would run more moderated card sorts and tree tests next time to hear reasoning behind choices, and recruit explicitly by familiarity level rather than mixing user types within a single round."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "digital-recipe-book",
+    "title": "Digital Recipe Book",
+    "role": "UX Researcher, Designer, & Prototyper, Team of 3",
+    "timeline": "Contextual inquiry → Requirements → Conceptual design → Prototyping → Evaluation",
+    "tools": ["Axure RP", "Remote testing"],
+    "summary": "Contextual inquiry and usability testing for a recipe app serving novice and experienced cooks — from personas and journey mapping through prototyping and evaluation.",
+    "methods": [
+      "Contextual inquiry",
+      "Personas",
+      "Journey mapping",
+      "User stories",
+      "Prototyping",
+      "Usability testing"
+    ],
+    "previewImage": "/photos/digital-recipe-book-preview.jpg",
+    "previewAlt": "Digital Recipe Book final low-fidelity prototype home screen",
+    "highlights": [
+      "Helped shape the interview protocol, conducted two of six contextual inquiry sessions, and edited personas and the journey map",
+      "Built most of the Axure prototype and facilitated two of six remote test sessions",
+      "Translated research into 2 personas, a journey map, and 25 user stories across four themes",
+      "Both test scenarios reached 100% completion, but the vegetarian filter took ~55% longer and needed help for half of users",
+      "Project ended after evaluation with a prioritized list of next changes, including filter UI cleanup, clean task starts, and grocery list contrast fixes"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "The problem",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Recipe management is fragmented in different ways depending on experience level: novice cooks feel overwhelmed by daily decisions, while experienced cooks lose recipes across notebooks and notes apps. We wanted to understand both patterns before designing anything."
+          }
+        ]
+      },
+      {
+        "id": "research-findings",
+        "title": "What we heard",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "I helped shape the interview protocol and conducted two of six contextual inquiry sessions, which surfaced a clear split in how people relate to recipes."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Novice cooks wanted simple meals and mostly did not track recipes; they rewatched saved TikToks instead",
+              "Experienced cooks tracked recipes in notebooks and notes apps, often losing or overwriting them",
+              "Both groups shared decision fatigue after a long day with no good way to match recipes to time, budget, or what was in the fridge"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mapping",
+        "title": "From research to design",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We built two personas (Freddie and Isabella), a journey map for Freddie's weeknight, and twenty-five user stories across four themes. I edited the personas and journey map, and two focus scenarios drove the prototype: searching by ingredients already at home, and filtering saved recipes by dietary preferences."
+          },
+          {
+            "type": "pdf",
+            "src": "/prototypes/digital-recipe-book-journey-map.pdf",
+            "title": "Journey map for Freddie, a novice cook, from commute home through missing ingredient and rushed dinner",
+            "caption": "Synthesized weeknight journey — used to align the team on design priorities.",
+            "linkLabel": "Open journey map PDF →",
+            "defaultZoom": 2
+          }
+        ]
+      },
+      {
+        "id": "iterations",
+        "title": "Two iterations",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The first prototype focused on core flows like search, filtering, categories, and recipe cards. For the final version I leaned into delivery-app visual language because research showed novice cooks often defaulted to takeout when cooking felt like too much effort."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/digital-recipe-book-lowfi-v1.jpg",
+            "alt": "First low-fidelity Digital Recipe Book prototype with search, filters, and recipe cards",
+            "caption": "Iteration 1 — functional core flows."
+          },
+          {
+            "type": "embed",
+            "src": "/prototypes/digital-recipe-book/start.html",
+            "title": "Digital Recipe Book — interactive prototype",
+            "height": 840,
+            "linkHref": "https://app.axure.cloud/app/project/xre45m/preview",
+            "linkLabel": "Open prototype in Axure Cloud →"
+          }
+        ]
+      },
+      {
+        "id": "testing-findings",
+        "title": "Testing results",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We ran six remote think-aloud sessions over Zoom and Discord, and I facilitated two of them. Each participant completed two tasks: search for recipes using tuna as an ingredient, then filter saved recipes to show only vegetarian options."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Both tasks reached 100% completion",
+              "Tuna search averaged about 22 seconds, with 1 of 6 participants needing assistance",
+              "Vegetarian filter averaged about 34 seconds, roughly 55% longer, with 3 of 6 needing assistance",
+              "The filter UI felt cluttered, and the vegetarian filter task did not start on a clean search page, which added confusion",
+              "Poor grocery list color contrast came up organically during think-aloud"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "outcome",
+        "title": "Outcome",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The project ended after one round of evaluation, so we did not move into a third prototype iteration. Testing still gave us a clear list of next changes, including decluttering the filter UI, starting each task on a clean search page, improving grocery list color contrast, and dimming the search background. Participants also asked for allergy filters, substitution suggestions, and clearer measurements, which we recorded as future requirements rather than implemented changes."
+          }
+        ]
+      },
+      {
+        "id": "reflection",
+        "title": "Reflection",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "I built most of the prototype, so I went in expecting the main flows to work. People still got stuck in ways I had not predicted, which reminded me that knowing a screen well is not the same as someone seeing it for the first time."
+          },
+          {
+            "type": "paragraph",
+            "text": "The vegetarian filter task started on a page that still showed tuna search results, which affected how people moved through filtering. Being in the session helped me tell the difference between a test setup issue and a filter UI issue. A grocery list contrast comment also came up outside our script, which reminded me to listen for accessibility problems during think-aloud and not only during code review."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "self-paced-learning",
+    "title": "How Students Learn",
+    "role": "UX Researcher, Team of 4",
+    "timeline": "Contextual observation → Semi-structured interviews → Affinity diagramming → Persona spectrums → Journey mapping → Priority matrix",
+    "tools": ["FigJam", "Remote observations and interviews"],
+    "summary": "UX research on how students use digital tools to study at their own pace — from contextual observation and interviews through personas, experience maps, and a feature roadmap.",
+    "methods": [
+      "Contextual observation",
+      "Interviews",
+      "Affinity diagramming",
+      "Persona spectrums",
+      "Journey mapping",
+      "Priority matrix"
+    ],
+    "previewImage": "/photos/self-paced-learning-preview.jpg",
+    "previewAlt": "Person using a laptop to study with sticky notes in the background",
+    "highlights": [
+      "Ran a two-phase study with 8 participants — contextual observation followed by interviews with the same people — to compare behavior against self-reported habits",
+      "Built a shared codebook and ran a second coding pass across four researchers to validate themes consistently",
+      "Surfaced four cross-cutting themes: active video control, multi-platform study systems, constant interruptions, and pre-session preparation",
+      "Translated findings into two personas (Grace and Jordan), scenarios, experience maps, and a priority matrix scoring features by impact and feasibility",
+      "Scoped explicitly as discovery — deliverable is a research report and roadmap handoff, not a built or tested prototype"
+    ],
+    "sections": [
+      {
+        "id": "gap",
+        "title": "The gap",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Most digital learning tools assume a passive viewer moving linearly through content, but students in practice pause, rewind, skip, and switch between tools to match their own pace. We set out to learn how students use digital tools to build knowledge at their own pace, and what supports or hinders that process."
+          }
+        ]
+      },
+      {
+        "id": "research",
+        "title": "Research",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Eight participants ages 22 to 36 completed a real study session while we observed, then sat for follow-up interviews with the same people. We structured field notes using AEIOU (Activities, Environment, Interactions, Objects, Users), built a shared codebook, and ran a second coding pass across four researchers to check that we were applying the same labels consistently."
+          }
+        ]
+      },
+      {
+        "id": "findings",
+        "title": "What we found",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "Students actively control video playback to regulate their pace against how familiar the content feels",
+              "Students build personalized, multi-platform systems using laptops, phones, and a mix of handwritten and digital notes",
+              "Sessions get interrupted by slow-loading videos, notifications, fatigue, and shared spaces",
+              "Students prepare before they start by checking calendars, clearing desks, and arranging windows"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "synthesis",
+        "title": "From data to personas",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We mapped participants across spectrums before collapsing them into two personas. Grace is a full-time student who leans on repetition and interactive examples; Jordan is a working professional studying in short, interrupted sessions. Mapping their scenarios side by side showed that self-paced learning looks different depending on whether someone is structured, self-directed, or hands-on."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/self-paced-learning-persona-spectrums.jpg",
+            "alt": "Persona spectrums mapping eight participants across study setup, note-taking, video use, devices, and playback behavior",
+            "caption": "Persona spectrums — grounding personas in where real participants landed on each axis."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/self-paced-learning-personas.jpg",
+            "alt": "Personas for Grace, a full-time student, and Jordan, a working professional, with goals, frustrations, and study behaviors",
+            "caption": "Grace and Jordan — two personas built from participant spectrums, scenarios, and experience maps."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/self-paced-learning-affinity-video.jpg",
+            "alt": "Affinity diagram cluster grouping field notes on video interaction behaviors such as pausing, rewinding, and skipping",
+            "caption": "Affinity diagram — video interaction cluster from observation data."
+          }
+        ]
+      },
+      {
+        "id": "recommendations",
+        "title": "Feature roadmap",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We translated the four themes into eleven feature ideas and scored each by impact and feasibility in a priority matrix. These ranked highest for a future self-paced learning tool:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Responsive playback controls and progress saving, to support active video pacing",
+              "A unified notes panel with cross-device sync, for students juggling multiple tools",
+              "A distraction-free focus mode, addressing constant session interruptions",
+              "A session dashboard for daily planning, supporting pre-session preparation habits"
+            ]
+          },
+          {
+            "type": "pdf",
+            "src": "/prototypes/self-paced-learning-priority-matrix.pdf",
+            "alt": "Priority matrix scoring eleven feature ideas by impact and feasibility for Grace and Jordan",
+            "caption": "Priority matrix — eleven feature ideas scored by impact and feasibility.",
+            "defaultZoom": 1
+          }
+        ]
+      },
+      {
+        "id": "outcome",
+        "title": "Outcome",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The deliverable was a research report with personas, scenarios, experience maps, and a priority matrix scoring eleven feature ideas. We did not build or test a prototype. The findings reflect eight participants in sessions of about thirty to forty minutes rather than a broader population."
+          }
+        ]
+      },
+      {
+        "id": "reflection",
+        "title": "Reflection",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We had to agree on a codebook and run a second coding pass before the themes in our write-up reflected shared analysis rather than individual interpretation, and that upfront alignment took longer than I expected compared to other team projects I have worked on."
+          },
+          {
+            "type": "paragraph",
+            "text": "Observation showed me behavior I would not get from click or completion data alone, like rearranging tabs or pausing a video to take notes, and interviewing the same people afterward helped explain some of what we watched. Because this project stopped at a research report with no prototype, I had to write findings clearly enough that someone else could continue from them."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "c-and-c-yard-care",
+    "title": "C&C Yard Care",
+    "role": "UX Researcher, Team of 4",
+    "timeline": "Heuristic evaluation → Cognitive walkthrough → Pilot test → Moderated remote usability testing",
+    "tools": ["Remote testing", "Google Forms", "Excel"],
+    "summary": "Usability testing on a live lawn care website to see whether predicted navigation, pricing, and credibility problems showed up with real users.",
+    "methods": [
+      "Heuristic evaluation",
+      "Cognitive walkthrough",
+      "Usability testing",
+      "Surveys"
+    ],
+    "previewImage": "/photos/c-and-c-yard-care-preview.jpg",
+    "previewAlt": "Two people beside a laptop with screenshots of log sheets in the background",
+    "highlights": [
+      "Analyzed task performance data and post-test survey results and helped write the usability test report",
+      "Validated prior heuristic evaluation and cognitive walkthrough findings with five moderated remote sessions on a live client site",
+      "All five participants completed the special-offer comparison task, but it had the highest difficulty rating; the credibility and mowing-info tasks each had one participant who did not reach the intended goal",
+      "Post-test survey averages fell around 3 to 3.8 on a 1-to-5 scale, so navigation, information finding, trust, and hiring confidence were moderate at best",
+      "Deliverable was a severity-rated findings table and recommendations report, not a site redesign"
+    ],
+    "sections": [
+      {
+        "id": "gap",
+        "title": "The gap",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "C&C Yard Care is a lawn care business in Spokane, WA. Before moderated testing, a heuristic evaluation, cognitive walkthrough, and pilot test had already surfaced more than fifty usability issues on the live site. We tested with five users to see whether predicted problems with navigation, pricing clarity, and credibility showed up in actual behavior."
+          }
+        ]
+      },
+      {
+        "id": "study",
+        "title": "Study setup and results",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Five participants completed three tasks in remote Zoom sessions of about twenty minutes each: assess business credibility, find lawn mowing service information and pricing, and evaluate whether a limited-time special offer was a better deal than regular pricing. For each task we logged pass, fail, or rejected status along with difficulty ratings."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Credibility assessment: 4 pass, 1 fail, with an average difficulty rating of 2.50",
+              "Mowing info and pricing: 4 pass, 1 rejected, with an average error count of 1.8 and difficulty of 2.63",
+              "Special offer comparison: 5 pass, with an average difficulty rating of 3.70",
+              "Post-test survey averages were navigation 3.0, finding information 3.4, trust 3.2, and hiring confidence 3.8 on a 1-to-5 scale where 1 means easy or trustworthy and 5 means difficult or not trustworthy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "findings",
+        "title": "Findings",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "Credibility presentation (high severity): participants noticed trust indicators but questioned their legitimacy and checked external sources like Google reviews and Facebook",
+              "Pricing transparency (high severity): pricing was buried in dense paragraph text with no visual distinction between services, and incomplete pricing pushed users toward calling",
+              "Navigation structure (medium severity): two competing navigation menus and a three-level dropdown structure led to backtracking and unintended pages",
+              "Promotional clarity (medium severity): the special offer and regular pricing lived on separate pages with no side-by-side comparison, and \"zone\" was never defined"
+            ]
+          },
+          {
+            "type": "figure",
+            "src": "/photos/c-and-c-yard-care-credibility.jpg",
+            "alt": "Annotated slide showing credibility presentation findings on the C and C Yard Care website",
+            "caption": "Credibility presentation — trust signals scattered and questioned without external verification."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/c-and-c-yard-care-pricing.jpg",
+            "alt": "Annotated slide showing pricing transparency findings on the C and C Yard Care website",
+            "caption": "Pricing transparency — dense paragraph text with no scannable comparison view."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/c-and-c-yard-care-navigation.jpg",
+            "alt": "Annotated slide showing navigation structure findings on the C and C Yard Care website",
+            "caption": "Navigation structure — competing menus and deep dropdowns caused backtracking."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/c-and-c-yard-care-promotional.jpg",
+            "alt": "Annotated slide showing promotional clarity findings on the C and C Yard Care website",
+            "caption": "Promotional clarity — offer and standard pricing on separate pages with no comparison."
+          }
+        ]
+      },
+      {
+        "id": "recommendations",
+        "title": "Design recommendations",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "Credibility presentation: consolidate testimonials and credentials into one section and surface external verification within the site",
+              "Pricing transparency: present pricing in a scannable table or card layout with full pricing shown upfront",
+              "Navigation structure: flatten navigation to two levels and surface frequently visited service pages more directly",
+              "Promotional clarity: put promotional and standard pricing on one page with a clear comparison and defined terms"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "outcome",
+        "title": "Outcome",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The deliverable was a usability test report with task performance data, survey averages, and severity-rated recommendations rather than a site redesign. Results aligned with the earlier evaluation work, with credibility and pricing transparency ranked high severity and navigation structure and promotional clarity ranked medium."
+          }
+        ]
+      },
+      {
+        "id": "reflection",
+        "title": "Reflection",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "My work came mostly after the sessions, when I analyzed task data in Excel, pulled post-test survey averages, and helped write report sections tying findings back to our research objectives."
+          },
+          {
+            "type": "paragraph",
+            "text": "The rejected status on the mowing info task showed why the raw session log mattered, because on a simple pass count that session looked successful until we read the notes and saw the participant had stopped on the wrong page and believed they were finished. Ranking recommendations by severity also helped us prioritize credibility and pricing over lower-friction navigation issues."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "meeting-has-already-started",
+    "title": "The Meeting Has Already Started",
+    "role": "Illustrator & Designer, Team of 4",
+    "tools": ["Hand illustration", "Scanning & layout", "HCI Critical Memo"],
+    "summary": "A group zine critiquing accessibility gaps in video conferencing platforms like Zoom during the pandemic — illustrated and designed to push against the polished corporate aesthetic of the tools we were examining.",
+    "methods": ["Design Justice", "HCI Critique", "Zine design"],
+    "featuredOnHome": false,
+    "previewImage": "/photos/meeting-zine-preview.jpg",
+    "previewAlt": "Page spreads from The Meeting Has Already Started zine",
+    "highlights": [
+      "Illustrated and designed the full zine, hand-drawing and scanning all visual assets",
+      "Built the visual system around chairs and negative space as metaphors for presence, absence, and who gets a seat in the room",
+      "Used a desaturated-to-full-color palette arc that mirrors the argument — from critique of Zoom's gaps to frameworks and interventions"
+    ],
+    "sections": [
+      {
+        "id": "context",
+        "title": "About the project",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A group project critiquing accessibility gaps in video conferencing platforms like Zoom, built on Design Justice, Ability-Based Design, and Assets-Based Design frameworks. I illustrated and designed the zine, hand-drawing and scanning all visual assets, and added alt text and image descriptions throughout so the accessibility argument extended to the artifact itself, not just its content."
+          }
+        ]
+      },
+      {
+        "id": "concept",
+        "title": "Concept development",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The design started with a moodboard built around two ideas: negative space and chairs. Chairs became the recurring visual metaphor for presence and absence — who has a seat in the room, who's missing one, and what it looks like when that gap gets filled or ignored. Negative space carried a similar idea visually, using empty or unfinished shapes to represent the perspectives left out of the design process."
+          },
+          {
+            "type": "figure",
+            "src": "/photos/meeting-zine-moodboard.jpg",
+            "alt": "Moodboard exploring chairs and negative space as visual metaphors",
+            "caption": "Moodboard — chairs and negative space as the core visual language."
+          },
+          {
+            "type": "paragraph",
+            "text": "From there I sketched thumbnails for every spread before touching final art, working through concepts like:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Who's the missing chair? Consulted and corrected after the fact, rather than included from the start",
+              "Continued barriers and the consequences of designing without disabled users in the room",
+              "Collective responsibility as a call to action",
+              "A seat at the table as the resolution"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "The empty chair on the cover grew out of this thinking. It carries the same idea as the whole moodboard, distilled down to one image, and it became the visual anchor the rest of the zine builds on."
+          }
+        ]
+      },
+      {
+        "id": "color",
+        "title": "Color as argument",
+        "variant": "callout",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The palette follows the argument's arc. Early pages are desaturated — dark charcoal and grayscale — matching the critique of Zoom's accessibility gaps. As the zine moves into the frameworks and interventions, the palette shifts through a gradient into pastel and eventually full color, mirroring the return of the perspectives that were missing at the start."
+          }
+        ]
+      },
+      {
+        "id": "full-zine",
+        "title": "The full zine",
+        "blocks": [
+          {
+            "type": "pdf",
+            "src": "/prototypes/meeting-has-already-started.pdf",
+            "title": "The Meeting Has Already Started — full zine",
+            "caption": "Complete digital zine.",
+            "linkLabel": "Open zine PDF →",
+            "defaultZoom": 0.5
+          }
+        ]
+      }
+    ]
+  }
+]

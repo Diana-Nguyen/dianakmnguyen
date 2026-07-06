@@ -1,0 +1,201 @@
+{
+  "sections": [
+    {
+      "id": "work",
+      "heading": "Work",
+      "entries": [
+        {
+          "id": "wbd",
+          "organization": "Warner Bros. Discovery",
+          "title": "Software Engineer",
+          "startDate": "2021-07",
+          "endDate": null,
+          "dateLabel": "July 2021 – Present",
+          "summary": "Commerce, auth, design systems, accessibility, and integration testing for HBO Max and Discovery+ web.",
+          "phases": [
+            {
+              "id": "hbo-max",
+              "title": "HBO Max",
+              "period": "Oct 2022 – Present",
+              "bullets": [
+                "Build and maintain commerce, subscription, and settings UI in a shared design system used across HBO Max web.",
+                "Own frontend work for global checkout and payment flows, including regional payment methods and vendor migrations.",
+                "Deliver auth, activation, and account flows across partner and multi-step journeys.",
+                "Apply accessibility as a default across auth and commerce surfaces — keyboard, focus, screen readers, and semantic markup.",
+                "Team SME for Playwright integration tests across subscription and playback paths."
+              ]
+            },
+            {
+              "id": "discovery-plus",
+              "title": "Discovery+",
+              "period": "Aug 2021 – Sep 2022",
+              "bullets": [
+                "Improved accessibility across auth, profile, and redeem flows on an early tiger team.",
+                "Migrated account UI from legacy modals to a shared web component library.",
+                "Built subscription and plan-picker features.",
+                "Supported internationalization and product releases."
+              ]
+            }
+          ],
+          "tags": [
+            "TypeScript",
+            "React",
+            "Design systems",
+            "Accessibility",
+            "Playwright",
+            "Commerce"
+          ]
+        },
+        {
+          "id": "rader",
+          "organization": "Rader Solutions",
+          "title": "Development Specialist",
+          "startDate": "2019-05",
+          "endDate": "2021-05",
+          "dateLabel": "May 2019 – May 2021",
+          "summary": "Full-stack development on commercial React and React Native applications, internal tooling, UI/UX wireframes, and Power BI reporting for clients and operations.",
+          "tags": [
+            "React",
+            "React Native",
+            "UI/UX",
+            "Power BI"
+          ],
+          "highlights": [
+            "Developed frontend of commercial React and React Native web and mobile applications.",
+            "Created internal React web application to upgrade from legacy system.",
+            "Designed UI/UX wireframes and prototypes to ensure products met clients’ requirements, functionality targets, and quality standards.",
+            "Produced Power BI reports and scripts to illustrate data for company and its clients to manage and monitor business processes."
+          ]
+        },
+        {
+          "id": "ul-tutor",
+          "organization": "University of Louisiana at Lafayette",
+          "title": "Tutor · Student-Athlete Academic Services",
+          "startDate": "2018-06",
+          "endDate": "2020-05",
+          "dateLabel": "June 2018 – May 2020",
+          "summary": "Academic support for student-athletes across coursework and study skills.",
+          "highlights": []
+        },
+        {
+          "id": "acadian-house",
+          "organization": "Acadian House Publishing",
+          "title": "Orders Department Staff · Editorial Assistant",
+          "startDate": "2018-05",
+          "endDate": "2019-05",
+          "dateLabel": "May 2018 – May 2019",
+          "summary": "Publishing operations, order fulfillment, and editorial support.",
+          "highlights": []
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "heading": "Education",
+      "entries": [
+        {
+          "id": "depaul-ms",
+          "organization": "DePaul University",
+          "title": "Master of Science, Human-Computer Interaction",
+          "startDate": "2024-09",
+          "endDate": "2027-03",
+          "dateLabel": "Sep 2024 – Mar 2027 (expected)",
+          "summary": "Graduate HCI program focused on user research, prototyping, and accessible product design."
+        },
+        {
+          "id": "bates-cte",
+          "organization": "Bates Technical College",
+          "title": "Career & Technical Education Teacher Preparation",
+          "startDate": "2026-03",
+          "endDate": null,
+          "dateLabel": "Mar 2026 – Present",
+          "summary": "Teacher preparation for career and technical education pathways."
+        },
+        {
+          "id": "ul-bs",
+          "organization": "University of Louisiana at Lafayette",
+          "title": "Bachelor of Science, Computer Science",
+          "startDate": "2017-08",
+          "endDate": "2021-05",
+          "dateLabel": "Aug 2017 – May 2021",
+          "summary": "Minor in Mathematics; concentration in Video Game Design & Development."
+        }
+      ]
+    },
+    {
+      "id": "certifications",
+      "heading": "Licenses & Certifications",
+      "entries": [
+        {
+          "id": "elvtr-ux-gaming",
+          "organization": "ELVTR",
+          "title": "UX/UI for Gaming",
+          "startDate": "2023-07",
+          "endDate": "2023-07",
+          "dateLabel": "July 2023",
+          "summary": "UX/UI specialization for game products and player-centered interfaces."
+        },
+        {
+          "id": "capxp",
+          "organization": "The AbleGamers Charity",
+          "title": "Certified Accessible Player Experience Practitioner",
+          "startDate": "2023-06",
+          "endDate": "2023-06",
+          "dateLabel": "June 2023",
+          "summary": "Game accessibility certification focused on inclusive player experiences."
+        }
+      ]
+    },
+    {
+      "id": "volunteering",
+      "heading": "Volunteering",
+      "entries": [
+        {
+          "id": "ul-hci-lab",
+          "organization": "University of Louisiana — HCI Lab",
+          "title": "Research Assistant",
+          "startDate": "2020-01",
+          "endDate": "2021-05",
+          "dateLabel": "Jan 2020 – May 2021",
+          "summary": "Human-computer interaction research support in the university lab."
+        },
+        {
+          "id": "congressional-app",
+          "organization": "Congressional App Challenge",
+          "title": "Student Mentor",
+          "startDate": "2019-09",
+          "endDate": "2019-11",
+          "dateLabel": "Sep 2019 – Nov 2019",
+          "summary": "Mentored students building apps for the Congressional App Challenge."
+        },
+        {
+          "id": "acm-alpha",
+          "organization": "Association for Computing Machinery — Alpha Chapter",
+          "title": "Event Coordinator",
+          "startDate": "2019-10",
+          "endDate": "2019-10",
+          "dateLabel": "October 2019",
+          "summary": "Coordinated chapter events for the computing student organization."
+        },
+        {
+          "id": "cmix-peer",
+          "organization": "University of Louisiana — CMIX Program",
+          "title": "Peer Mentor",
+          "startDate": "2019-01",
+          "endDate": "2019-04",
+          "dateLabel": "Jan 2019 – Apr 2019",
+          "summary": "Peer mentorship for students in the CMIX program."
+        },
+        {
+          "id": "cgi-leadership",
+          "organization": "CGI",
+          "title": "Mentor · Junior Leadership Day",
+          "startDate": "2018-12",
+          "endDate": "2018-12",
+          "dateLabel": "December 2018",
+          "summary": "Mentored students at CGI Junior Leadership Day."
+        }
+      ]
+    }
+  ]
+}

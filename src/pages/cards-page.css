@@ -1,0 +1,22 @@
+.cards-gallery.pokemon-collection {
+  --pc-grid-min: 88px;
+  --pc-grid-min-md: 110px;
+  --pc-grid-min-lg: 140px;
+  --pc-grid-gap: 10px;
+  --pc-grid-gap-md: 12px;
+  --pc-grid-gap-lg: 14px;
+  --pc-thumb-radius: 6px;
+  --pc-set-divider-color: rgb(255 255 255 / 0.12);
+  --pc-thumb-bg: rgb(255 255 255 / 0.06);
+  --pc-skeleton-bg: rgb(255 255 255 / 0.08);
+}
+
+.cards-gallery .pokemon-collection__link {
+  display: none;
+}
+
+.cards-page__disclaimer {
+  opacity: 0.75;
+  max-width: 58ch;
+  line-height: 1.5;
+}

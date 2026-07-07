@@ -1,0 +1,1 @@
+import{S as e,T as t,_ as n,h as r,p as i,w as a}from"./index-D8pPd514.js";import{i as o}from"./ContentPage-DZ0FJahC.js";var s=e();function c(){let{slug:e}=t(),c=e?i(e):void 0;return c?(0,s.jsx)(a,{to:`${n.research}#${c.slug}`,replace:!0}):(0,s.jsx)(o,{message:`Case study not found.`,...r})}export{c as CaseStudyPage};

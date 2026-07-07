@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="134px" height="124px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask fill="white" id="Clip87">
+      <path d="M 188 123.5  C 153.8675 123.5  126.5 96.1325  126.5 62  L 126.5 62  C 126.5 27.8675  153.8675 0.5  188 0.5  L 198 0.5  C 232.1325 0.5  259.5 27.8675  259.5 62  L 259.5 62  C 259.5 96.1325  232.1325 123.5  198 123.5  L 188 123.5  " fill-rule="evenodd" />
+    </mask>
+  </defs>
+  <g transform="matrix(1 0 0 1 -126 0 )">
+    <path d="M 126 0  L 260 0  L 260 124  L 126 124  L 126 0  " fill-rule="nonzero" fill="rgba(204, 204, 204, 1)" stroke="none" class="fill" mask="url(#Clip87)" />
+    <path d="M 135 9  L 251 9  L 251 115  L 135 115  L 135 9  " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" class="fill" mask="url(#Clip87)" />
+    <path d="M 204.98000000000002 37.199999999999996  C 199.77200000000002 37.199999999999996  195.68 33.108  195.68 27.9  C 195.68 22.691999999999997  199.77200000000002 18.599999999999998  204.98000000000002 18.599999999999998  C 210.18800000000002 18.599999999999998  214.28 22.691999999999997  214.28 27.9  C 214.28 33.108  210.18800000000002 37.199999999999996  204.98000000000002 37.199999999999996  " fill-rule="nonzero" fill="rgba(204, 204, 204, 1)" stroke="none" class="fill" mask="url(#Clip87)" />
+    <path d="M 138 112  L 138 56.99999999999999  L 165.5 32  L 204 56.47761194029851  L 226 47  L 248 56.47761194029851  L 248 112  L 138 112  " fill-rule="nonzero" fill="rgba(22, 155, 213, 1)" stroke="none" class="fill" mask="url(#Clip87)" />
+    <path d="M 188 123  C 154.145 123  127 95.855  127 62  L 127 62  C 127 28.145  154.145 1  188 1  L 198 1  C 231.855 1  259 28.145  259 62  L 259 62  C 259 95.855  231.855 123  198 123  L 188 123  Z " stroke-width="2" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" class="stroke" mask="url(#Clip87)" />
+  </g>
+</svg>

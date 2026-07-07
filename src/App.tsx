@@ -35,7 +35,7 @@ const CardsPage = lazy(() =>
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <SkipLink />
       <ScrollToTop />
       <ControlPanel />

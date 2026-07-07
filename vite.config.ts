@@ -5,7 +5,7 @@ import { join } from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/portfolio/',
   plugins: [
     react(),
     {

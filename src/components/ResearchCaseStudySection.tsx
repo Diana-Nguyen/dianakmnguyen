@@ -4,6 +4,7 @@ import {
   ContentPageSection,
 } from './content-page/ContentPage'
 import { ResearchCaseStudyBlocks } from './ResearchCaseStudyBlocks'
+import { assetUrl } from '../utils/assetUrl'
 import './ResearchCaseStudySection.css'
 
 interface ResearchCaseStudySectionProps {
@@ -25,7 +26,7 @@ export function ResearchCaseStudySection({ study }: ResearchCaseStudySectionProp
         {study.previewImage ? (
           <div className="research-study__preview">
             <img
-              src={study.previewImage}
+              src={assetUrl(study.previewImage)}
               alt={study.previewAlt ?? ''}
               loading="lazy"
               decoding="async"

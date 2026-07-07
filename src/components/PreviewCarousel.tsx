@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react'
 import { useReducedMotion } from 'framer-motion'
 import { aboutPreviews } from '../data/about-previews'
+import { assetUrl } from '../utils/assetUrl'
 import { CarouselControls } from './CarouselControls'
 import './PreviewCarousel.css'
 
@@ -43,7 +44,7 @@ export function PreviewCarousel() {
           {slide.src ? (
             <img
               className="preview-carousel__img"
-              src={slide.src}
+              src={assetUrl(slide.src)}
               alt={slide.alt ?? slide.title}
               loading="lazy"
               decoding="async"

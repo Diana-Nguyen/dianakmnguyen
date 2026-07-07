@@ -16,7 +16,7 @@ if (!existsSync(join(dist, 'index.html'))) {
 }
 
 const remote = execSync('git remote get-url origin', { cwd: root, encoding: 'utf8' }).trim()
-const workDir = mkdtempSync(join(tmpdir(), 'dianakmnguyen-gh-pages-'))
+const workDir = mkdtempSync(join(tmpdir(), 'portfolio-gh-pages-'))
 
 try {
   cpSync(dist, workDir, { recursive: true })

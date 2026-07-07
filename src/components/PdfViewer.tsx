@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { PDFDocumentProxy } from 'pdfjs-dist'
 import './PdfViewer.css'
+import { assetUrl } from '../utils/assetUrl'
 
 type PdfJsModule = {
   GlobalWorkerOptions: { workerSrc: string }
@@ -38,7 +39,7 @@ function formatZoom(value: number) {
 }
 
 function resolvePdfUrl(src: string) {
-  return new URL(src, window.location.origin).href
+  return new URL(assetUrl(src), window.location.origin).href
 }
 
 function isRenderCancelled(error: unknown) {
@@ -223,7 +224,7 @@ export function PdfViewer({
     return () => viewportEl.removeEventListener('keydown', handleKeyDown)
   }, [goToNext, goToPrev, status])
 
-  const openHref = linkHref ?? src
+  const openHref = assetUrl(linkHref ?? src)
 
   return (
     <figure className="research-study__pdf" aria-label={title}>

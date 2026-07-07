@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { CaseStudy } from '../data/types'
 import { ROUTES } from '../data/routes'
+import { assetUrl } from '../utils/assetUrl'
 import './CaseStudyCard.css'
 
 interface CaseStudyCardProps {
@@ -13,7 +14,7 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
       {study.previewImage ? (
         <div className="case-card__preview">
           <img
-            src={study.previewImage}
+            src={assetUrl(study.previewImage)}
             alt={study.previewAlt ?? ''}
             loading="lazy"
             decoding="async"

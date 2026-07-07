@@ -1,4 +1,5 @@
 import type { CaseStudyBlock, CaseStudyEmbedItem, CaseStudyFigureItem } from '../data/types'
+import { assetUrl } from '../utils/assetUrl'
 import { ContentPageBulletList } from './content-page/ContentPage'
 import { PdfViewer } from './PdfViewer'
 
@@ -12,7 +13,7 @@ function EmbedBlock({ block }: { block: Extract<CaseStudyBlock, { type: 'embed' 
   return (
     <div className="research-study__embed">
       <iframe
-        src={block.src}
+        src={assetUrl(block.src)}
         title={block.title}
         height={block.height ?? 640}
         loading="lazy"
@@ -20,7 +21,7 @@ function EmbedBlock({ block }: { block: Extract<CaseStudyBlock, { type: 'embed' 
       />
       <p className="research-study__embed-link mono-label">
         <a
-          href={block.linkHref ?? block.src}
+          href={assetUrl(block.linkHref ?? block.src)}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -44,7 +45,7 @@ function EmbedItem({
         <p className="mono-label research-study__embed-label">{item.label}</p>
       ) : null}
       <iframe
-        src={item.src}
+        src={assetUrl(item.src)}
         title={item.title}
         height={height}
         loading="lazy"
@@ -52,7 +53,7 @@ function EmbedItem({
       />
       <p className="research-study__embed-link mono-label">
         <a
-          href={item.linkHref ?? item.src}
+          href={assetUrl(item.linkHref ?? item.src)}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -69,7 +70,7 @@ function FigureItem({ item }: { item: CaseStudyFigureItem }) {
       {item.label ? (
         <p className="mono-label research-study__figure-label">{item.label}</p>
       ) : null}
-      <img src={item.src} alt={item.alt} loading="lazy" decoding="async" />
+      <img src={assetUrl(item.src)} alt={item.alt} loading="lazy" decoding="async" />
       {item.caption ? <figcaption>{item.caption}</figcaption> : null}
     </figure>
   )
@@ -101,7 +102,7 @@ export function ResearchCaseStudyBlocks({
             return (
               <figure key={key} className="research-study__figure">
                 <img
-                  src={block.src}
+                  src={assetUrl(block.src)}
                   alt={block.alt}
                   loading="lazy"
                   decoding="async"
